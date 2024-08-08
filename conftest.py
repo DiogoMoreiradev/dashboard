@@ -4,7 +4,7 @@ from selenium import webdriver
 
 @pytest.fixture(scope="module")
 
-def brownser():
+def browser():
 	chrome_options = webdriver.ChromeOptions()
 	chrome_options.add_argument('--headless')
 	chrome_options.add_argument('--disable-gpu')
